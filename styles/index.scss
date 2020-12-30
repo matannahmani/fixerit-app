@@ -1,0 +1,17 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+@import './global.scss';
+@import './style.scss';
+body{
+    direction: rtl;
+}
+.avatar-128{
+    width: 128px !important;
+    height: 128px !important;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50% !important;
+}
