@@ -29,7 +29,7 @@ const Faq = () => {
                                 <div className="accrodion-title" onClick={() => handleClick(0)}>
                                     <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
-                                <div className="accrodion-content">
+                                <div className="accrodion-content faq-hide">
                                     <div className="inner">
                                         <p>There are many variations of passages of available but majority have
                                             alteration in some by inject humour or random words. Lorem ipsum dolor sit
@@ -44,7 +44,7 @@ const Faq = () => {
                                 <div className="accrodion-title" onClick={() => handleClick(1)}>
                                     <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
-                                <div className="accrodion-content">
+                                <div className="accrodion-content faq-hide">
                                     <div className="inner">
                                         <p>There are many variations of passages of available but majority have
                                             alteration in some by inject humour or random words. Lorem ipsum dolor sit
@@ -59,7 +59,7 @@ const Faq = () => {
                                 <div className="accrodion-title" onClick={() => handleClick(2)}>
                                     <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
-                                <div className="accrodion-content">
+                                <div className="accrodion-content faq-hide">
                                     <div className="inner">
                                         <p>There are many variations of passages of available but majority have
                                             alteration in some by inject humour or random words. Lorem ipsum dolor sit
@@ -74,7 +74,7 @@ const Faq = () => {
                                 <div className="accrodion-title" onClick={() => handleClick(3)}>
                                     <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
-                                <div className="accrodion-content">
+                                <div className="accrodion-content faq-hide">
                                     <div className="inner">
                                         <p>There are many variations of passages of available but majority have
                                             alteration in some by inject humour or random words. Lorem ipsum dolor sit

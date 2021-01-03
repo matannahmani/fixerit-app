@@ -17,9 +17,10 @@ const Layout = (props) => {
                     <link rel="icon" type="image/png" sizes="16x16"
                                   href="/assets/images/favicons/favicon-16x16.png" />
                     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet" />
-                    {/* <link rel="stylesheet" href="/assets/css/animate.min.css" />
+                    <link rel="stylesheet" href="/assets/css/animate.min.css" />
                     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-                    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" /> */ }
+                    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+                    <link rel="stylesheet" href="/assets/css/swiper.min.css"/>
                     <link rel="stylesheet" href="/assets/plugins/dimon-icons/style.css" />
                 </Head>
 

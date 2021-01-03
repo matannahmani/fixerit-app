@@ -1,11 +1,8 @@
 import '../styles/index.scss';
-import 'swiper/swiper.scss';
-import '../styles/bootstrap.min.css';
-import '../styles/animate.min.css';
 import NProgress from 'nprogress';
 import Router from 'next/router';
-// import '../public/css/boo'
 import 'nprogress/nprogress.css'; //styles of nprogress
+
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: true });
 
