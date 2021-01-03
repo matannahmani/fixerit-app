@@ -10,7 +10,7 @@ const Subscribe = () => {
                     </div>
                     <form action="#" className="mailchimp-one__mc-form mc-form"
                           data-url="#">
-                        <input type="email" id="mc-email" className="formInput" placeholder="Email address" />
+                        <input type="email" id="mc-email" className="formInput" placeholder="איימל" />
                             <button type="submit"><i className="dimon-icon-right-arrow"></i></button>
                     </form>
                     <div className="mc-form__response"></div>

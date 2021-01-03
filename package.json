@@ -22,7 +22,8 @@
     "react-dom": "^16.13.0",
     "react-id-swiper": "^4.0.0",
     "react-modal-video": "^1.2.6",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^6.4.5"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",

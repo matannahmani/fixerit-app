@@ -242,6 +242,7 @@
 
     .header-navigation ul.navigation-box>li {
         padding: 0;
+        margin: 0;
         display: block;
     }
 
@@ -421,6 +422,7 @@
         position: relative;
         top: auto;
         right: auto;
+        left: unset;
     }
     .pricing-one [class*=col-] {
         margin-bottom: 0;
@@ -489,7 +491,7 @@
     .footer-widget__links-wrap {
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .footer-widget__about {

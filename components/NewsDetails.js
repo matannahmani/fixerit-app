@@ -15,8 +15,8 @@ const NewsDetails = (props) => {
                                 </div>
                                 <div className="blog-one__content">
                                     <ul className="list-unstyled blog-one__meta">
-                                        <li><a href="#">כתבה מעת: {props.author.name}</a></li>
-                                        <li><a href="#">{new Date(props.date).toLocaleDateString()}</a></li>
+                                        <li><span>כתבה מעת: {props.author.name}</span></li>
+                                        <li><span>{new Date(props.date).toLocaleDateString()}</span></li>
                                         {/* <li><a href="#">2 Comments</a></li> */}
                                     </ul>
                                     <h3 className="blog-one__title">{props.title}</h3>

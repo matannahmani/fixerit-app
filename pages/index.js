@@ -1,43 +1,45 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout-post';
-import { getAllPostsForHome } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import Layout from "../components/Layout";
+import NavTwo from "../components/NavTwo";
+import Footer from "../components/Footer";
+import BannerTwo from "../components/BannerTwo";
+import Features from "../components/Features";
+import CallToActionTwo from "../components/CallToActionTwo";
+import Testimonial from "../components/Testimonial";
+import Brands from "../components/Brands";
+import Counter from "../components/Counter";
+import Faq from "../components/Faq";
+import NewsHome from "../components/NewsHome";
+import Subscribe from "../components/Subscribe";
+import { getAllPostsForHome } from "../lib/api";
 
-export default function Index({ allPosts, preview }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
-  return (
-    <>
-      <Layout preview={preview}>
-        <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
-        <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
-      </Layout>
-    </>
-  )
-}
+
+
+const HomePageTwo = ({ allPosts, preview }) => (
+
+    <Layout pageTitle="Fixer IT">
+        <NavTwo />
+        <BannerTwo />
+        <Features />
+        <CallToActionTwo />
+        <Testimonial />
+        <Brands />
+        <Counter />
+        <Faq />
+        <NewsHome allPosts={allPosts}/>
+        <Subscribe />
+        <Footer />
+    </Layout>
+
+)
+
+export default HomePageTwo;
+
+
 
 export async function getStaticProps({ preview = false }) {
-  const allPosts = await getAllPostsForHome(preview)
-  return {
-    props: { allPosts, preview },
+    const allPosts = await getAllPostsForHome(preview)
+    return {
+      props: { allPosts, preview },
+    }
   }
-}
+  

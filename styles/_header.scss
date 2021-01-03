@@ -70,20 +70,7 @@
         padding: 40px 0;
         display: inline-block;
         vertical-align: middle;
-        margin-right: 70px;
-
-        +li {
-            // margin-right: 70px;
-
-        }
-
-        &:first-child {
-            padding-left: 0;
-        }
-
-        &:last-child {
-            padding-right: 0;
-        }
+        margin: 0 70px;
 
         >a {
             padding: 0;

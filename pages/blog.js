@@ -12,7 +12,7 @@ const NewsPage = ({ allPosts, preview }) => {
     <Layout pageTitle="FixerIT | News">
         <NavTwo />
         <PageHeader title="חדשות" />
-        <News allPosts={allPosts}/>
+        <News allPosts={[...allPosts,...allPosts,...allPosts,...allPosts,...allPosts,...allPosts,...allPosts]}/>
         <Footer />
     </Layout>
     )

@@ -49,11 +49,9 @@ const NavTwo = () => {
                                 <li className="scrollToLink">
                                     <Link href="/blog"><a>בלוג</a></Link>
                                 </li>
+
                                 <li className="scrollToLink">
-                                    <a href="#screenshots">תמונות של שירותים</a>
-                                </li>
-                                <li className="scrollToLink">
-                                    <a href="#features">שירותים</a>
+                                    <a href="../#features">שירותים</a>
                                 </li>
                                 <li className="current scrollToLink">
                                     <a href="/">בית</a>

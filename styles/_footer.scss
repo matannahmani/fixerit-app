@@ -58,10 +58,7 @@
         background-size: 200% auto;
         font-size: 18px;
         transition: all .4s ease;
-
-        +a {
-            margin-left: 10px;
-        }
+        margin: 0px 4px;
 
         &:hover {
             background-position: right center;
