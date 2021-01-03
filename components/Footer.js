@@ -67,32 +67,13 @@ export default class Blog extends Component {
                                         <li><a href="#">How It Works</a></li>
                                     </ul>
                                 </div>
-                                <div className="footer-widget">
-                                    <h3 className="footer-widget__title">Services</h3>
-                                    <ul className="footer-widget__links list-unstyled">
-                                        <li><a href="#">Speed Optimization </a></li>
-                                        <li><a href="#">Marketing Analysis </a></li>
-                                        <li><a href="#">SEO and Backlinks </a></li>
-                                        <li><a href="#">Content Marketing</a></li>
-                                    </ul>
-                                </div>
-                                <div className="footer-widget">
-                                    <h3 className="footer-widget__title">Links</h3>
-                                    <ul className="footer-widget__links list-unstyled">
-                                        <li><a href="#">Help </a></li>
-                                        <li><a href="#">Support </a></li>
-                                        <li><a href="#">Clients </a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
                             </div>
                             <div className="col-lg-3">
                                 <div className="footer-widget">
                                     <div className="site-footer__social">
-                                        <a href="#" className="fa fa-facebook-square"></a>
-                                        <a href="#" className="fa fa-twitter"></a>
-                                        <a href="#" className="fa fa-instagram"></a>
-                                        <a href="#" className="fa fa-pinterest-p"></a>
+                                        <a href="https://www.facebook.com/FixerEran" className="fa fa-facebook-square"></a>
+                                        <a href="https://eranfixer.com" className="fa fa-chrome"></a>
+                                        <a href="https://www.instagram.com/eranfixer/" className="fa fa-instagram"></a>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +83,7 @@ export default class Blog extends Component {
                 <div className="site-footer__bottom">
                     <div className="container">
                         <div className="inner-container text-center">
-                            <p className="site-footer__copy">&copy; copyright 2020 by <a href="#">Layerdrops.com</a></p>
+                            <p className="site-footer__copy">כל הזכויות שמורות ל <a target="_blank" href="https://www.matannahmani.com">MatanNahmani.com</a> &copy; </p>
                         </div>
                     </div>
                 </div>
