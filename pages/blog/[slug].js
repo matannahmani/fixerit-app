@@ -18,26 +18,21 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <PageLayout>
       <Head>
-        <title>{(post.title !== undefined) ? `Fix IT | ${post.title}` : 'Fix IT'}</title>
+      {router.isFallback ? (null
+                  ) : (
+                    <>
+                    <title>Fix IT | {post.title}</title>
+                    <meta name="description" content={post.seo}/>
+                    <meta name="keywords" content={post.tags}/>
+                    <meta name="author" content={post.author.name}/>
+                    </>
+                  )}
         <meta name="description" content="Test"/>
-        {/* <meta name="description" content={(post.seo !== undefined) ? post.seo : "Fix It seo here"}/> */}
-        <meta name="keywords" content={(post.tags !== undefined) ? post.tags : "Technology, HTML, CSS, JavaScript, SEO, בניית אתרים, תיקון מחשבים"}/>
-        <meta name="author" content={(post.author.name !== undefined) ? post.author.name : "Fixer"}/>
       </Head>
       <PostLayout preview={preview}>
         <NavTwo />
           <PageHeader title='בלוג'/>
-                {router.isFallback ? (
-                  <NewsDetails
-                  title={undefined}
-                  coverImage={undefined}
-                  date={undefined}
-                  author={undefined}
-                  content={undefined}
-                  loading={true}
-                  tags={undefined}
-                  morePosts={undefined}
-                  />
+                {router.isFallback ? (null
                   ) : (
                     <>
                     {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
