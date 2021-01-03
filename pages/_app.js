@@ -1,5 +1,8 @@
 import '../styles/index.scss';
 import 'swiper/swiper.scss';
+import '../styles/bootstrap.min.css';
+import '../styles/font-awesome.min.css';
+import '../styles/animate.min.css';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 // import '../public/css/boo'
