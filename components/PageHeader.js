@@ -11,7 +11,7 @@ const PageHeader = (props) => {
                 <div className="container">
                     <ul className="list-unstyled thm-breadcrumb">
                         <li><Link href="/"><a>בית</a></Link></li>
-                        <li className="active"><Link href="./"><a>{props.title}</a></Link></li>
+                        <li className="active"><Link href="/"><a>{props.title}</a></Link></li>
                     </ul>
                     <h2 className="inner-banner__title">{props.title}</h2>
                 </div>
