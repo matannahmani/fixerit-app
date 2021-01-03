@@ -61,6 +61,8 @@ export async function getStaticProps({ params, preview = false }) {
       preview,
       post: data?.post || null,
       morePosts: data?.morePosts || null,
+      revalidate: 1, // In seconds
+
     },
   }
 }
@@ -75,5 +77,6 @@ export async function getStaticPaths() {
         },
       })) || [],
     fallback: true,
+
   }
 }
