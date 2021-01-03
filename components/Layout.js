@@ -21,9 +21,6 @@ const Layout = (props) => {
                     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
                     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
                     <link rel="stylesheet" href="/assets/plugins/dimon-icons/style.css" />
-                    <link rel="stylesheet" href="/assets/css/style.css" />
-                    <link rel="stylesheet" href="/assets/css/responsive.css" />
-
                 </Head>
 
                 <div className="page-wrapper">

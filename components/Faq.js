@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 
 const Faq = () => {
+    const faqt = useRef([]);
+
+    const handleClick = (i) => {
+        const node = faqt.current[i];
+        if (node.classList.contains('active'))
+        {
+            node.classList.remove('active')
+            node.children[0].children[1].classList.add('faq-hide');
+        } else
+        {
+             node.classList.add('active');
+             node.children[0].children[1].classList.remove('faq-hide');
+            }
+    }
         return (
             <section className="faq-one">
                 <img src="/assets/images/background/faq-one-bg.png" alt="Awesome Image" className="faq-one__bg" />
@@ -10,9 +24,9 @@ const Faq = () => {
                         </h2>
                     </div>
                     <div className="accrodion-grp faq-accrodion">
-                        <div className="accrodion active">
+                        <div className="accrodion" ref={(e) => faqt.current[0] = e}>
                             <div className="accrodion-inner">
-                                <div className="accrodion-title">
+                                <div className="accrodion-title" onClick={() => handleClick(0)}>
                                     <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
                                 <div className="accrodion-content">
@@ -25,10 +39,10 @@ const Faq = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accrodion active">
+                        <div className="accrodion" ref={(e) => faqt.current[1] = e}>
                             <div className="accrodion-inner">
-                                <div className="accrodion-title">
-                                    <h4>Boostup your application traffic is just a step away</h4>
+                                <div className="accrodion-title" onClick={() => handleClick(1)}>
+                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
                                 <div className="accrodion-content">
                                     <div className="inner">
@@ -40,10 +54,10 @@ const Faq = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accrodion active">
+                        <div className="accrodion" ref={(e) => faqt.current[2] = e}>
                             <div className="accrodion-inner">
-                                <div className="accrodion-title">
-                                    <h4>How to update application new features</h4>
+                                <div className="accrodion-title" onClick={() => handleClick(2)}>
+                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
                                 <div className="accrodion-content">
                                     <div className="inner">
@@ -55,10 +69,10 @@ const Faq = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="accrodion active">
+                        <div className="accrodion" ref={(e) => faqt.current[3] = e}>
                             <div className="accrodion-inner">
-                                <div className="accrodion-title">
-                                    <h4>How to connect with the support to improve app experience</h4>
+                                <div className="accrodion-title" onClick={() => handleClick(3)}>
+                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
                                 </div>
                                 <div className="accrodion-content">
                                     <div className="inner">
