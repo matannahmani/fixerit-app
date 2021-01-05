@@ -1,5 +1,6 @@
 import React from 'react';
-import BlockContent from '@sanity/block-content-to-react'
+// import BlockContent from '@sanity/block-content-to-react'
+import BlockContent from '../components/BlockContent';
 import markdownStyles from './markdown-styles.module.css'
 import Link from 'next/link';
 
@@ -21,6 +22,7 @@ const NewsDetails = (props) => {
                                     </ul>
                                     <h3 className="blog-one__title">{props.title}</h3>
                                     <div className="blog-one__text">
+                                        {console.log(props.content)}
                                         <BlockContent blocks={props.content} className={markdownStyles.markdown} />
                                     </div>
 
