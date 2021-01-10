@@ -42,30 +42,16 @@ export default class Blog extends Component {
             <footer className="site-footer">
                 <div className="site-footer__upper">
                     <div className="container">
-                        <div className="row">
+                        <div className="row justify-content-between">
                             <div className="col-lg-3">
                                 <div className="footer-widget footer-widget__about">
-                                    <img src="/assets/images/resources/logo-dark.png" width="119" alt=""
+                                    <img src="/assets/images/resources/logo.png" width="119" alt="logo"
                                          className="footer-widget__logo" />
-                                        <p className="footer-widget__contact"><a href="tel:888-666-0000">888 666
-                                            0000</a></p>
+                                        <p className="footer-widget__contact"><a href="tel:0723281398">072-328-1398</a></p>
 
                                         <p className="footer-widget__contact"><a
-                                            href="mailto:needhelp@example.com">needhelp@example.com</a></p>
-                                            <p className="footer-widget__contact">855 road, broklyn street <br/> new york
-                                                600</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 d-flex justify-content-between footer-widget__links-wrap">
-                                <div className="footer-widget">
-                                    <h3 className="footer-widget__title">Explore</h3>
-                                    <ul className="footer-widget__links list-unstyled">
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Our Team</a></li>
-                                        <li><a href="#">Features</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">How It Works</a></li>
-                                    </ul>
+                                            href="mailto:eranfixer@gmail.com">eranfixer@gmail.com</a></p>
+                                            <p className="footer-widget__contact">שדרות התמרים 2<br/>אילת, ישראל</p>
                                 </div>
                             </div>
                             <div className="col-lg-3">

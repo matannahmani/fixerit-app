@@ -5,7 +5,7 @@ const Features = () => {
             <section className="service-one" id="features">
                 <div className="container">
                     <div className="block-title text-center">
-                        <h2 className="block-title__title">Checkout Our <span>Software</span> <br /> Features Below.
+                        <h2 className="block-title__title">פתרונות מחשוב<br/> במיקור חוץ לעסקים באילת 
                         </h2>
                     </div>
                     <div className="row">
@@ -13,8 +13,8 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-laptop"></i>
-                                    <h3><a href="#">Speed <br /> Optimization</a></h3>
-                                    <p>Lorem ipsum is are <br /> many variations of <br /> pass of majority.</p>
+                                    <h3><a href="#">שירותי מחשוב - IT</a></h3>
+                                    <p>צוות תמיכה ומערך טכנאים שיספק שירות אישי איכותי ובזמן אמת בבית העסק.</p>
                                     <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
@@ -23,8 +23,8 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-presentation"></i>
-                                    <h3><a href="#">Marketing <br /> Analysis</a></h3>
-                                    <p>Lorem ipsum is are <br /> many variations of <br /> pass of majority.</p>
+                                    <h3><a href="#">אינטרנט ומדיה</a></h3>
+                                    <p>בניית אתרים, קידום אתרים באמצעות ערן פיקסר פתרונות אינטרנט.</p>
                                     <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
@@ -33,8 +33,8 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-target"></i>
-                                    <h3><a href="#">SEO and <br /> Backlinks</a></h3>
-                                    <p>Lorem ipsum is are <br /> many variations of <br /> pass of majority.</p>
+                                    <h3><a href="#">שרתי ענן</a></h3>
+                                    <p>הקמה והתקנה של שרתי ענן, הקמת מערך גיבוי יומי וניהול Database.</p>
                                     <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
@@ -43,8 +43,8 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-visualization"></i>
-                                    <h3><a href="#">Content <br /> Marketing</a></h3>
-                                    <p>Lorem ipsum is are <br /> many variations of <br /> pass of majority.</p>
+                                    <h3><a href="#">חומרה ותוכנה</a></h3>
+                                    <p>ייעוץ והתקנה של מערכות תוכנה חומרה ותקשורת בבית העסק.</p>
                                     <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>

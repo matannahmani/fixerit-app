@@ -5,8 +5,7 @@ const Subscribe = () => {
             <section className="mailchimp-one">
                 <div className="container">
                     <div className="block-title text-center">
-                        <h2 className="block-title__title">Subscribe Our <span>Newsletter</span> <br /> to Get New
-                            Updates.</h2>
+                        <h2 className="block-title__title">הצטרף לרשימת תפוצה</h2>
                     </div>
                     <form action="#" className="mailchimp-one__mc-form mc-form"
                           data-url="#">

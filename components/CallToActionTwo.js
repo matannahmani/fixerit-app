@@ -10,17 +10,13 @@ const CallToActionTwo = () => {
                             <div className="cta-two__content">
                                 <i className="cta-two__icon dimon-icon-data"></i>
                                 <div className="block-title text-left">
-                                    <h2 className="block-title__title">Interact with <span>Customers</span> <br /> on
-                                        Single Platform.</h2>
+                                    <h2 className="block-title__title">המשרד עובר לענן ?</h2>
                                 </div>
                                 <div className="cta-two__text">
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Lorem Ipsum is simply dummy text of the printing laborum
-                                        perspiciatis unde.</p>
-                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
-                                        mollit lorem ipsum anim id est.</p>
+                                    <p>חברתנו תעזור לעסק שלכם לעבור לעבודה מהבית, בעידן המודרני ובמיוחד לאחר מגפת הקורנה עברנו לעבוד מהבית רובנו, התאמת התשתיות של המנהלים והעובדים היא קריטית להצלחת הארגון וייעול העבודה מהבית.</p>
+                                    <p><b>צוות מערכות מחשוב זמין 24/7</b><br/> למענה מהיר ופתרון בעיות מרוחק כולל הגעה לבית העסק בכל שעה <span className="cta-read">כפוף לדמי ניהול חודשיים.</span></p>
                                 </div>
-                                <a href="#" className="thm-btn"><span>Get Started</span></a>
+                                <a href="#" className="thm-btn"><span>צור קשר</span></a>
                             </div>
                         </div>
                     </div>

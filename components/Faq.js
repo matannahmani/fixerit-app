@@ -20,7 +20,7 @@ const Faq = () => {
                 <img src="/assets/images/background/faq-one-bg.png" alt="Awesome Image" className="faq-one__bg" />
                 <div className="container">
                     <div className="block-title text-center">
-                        <h2 className="block-title__title">Want to Ask <span>Something</span> <br /> From Us?
+                        <h2 className="block-title__title">שאלות ותשובות
                         </h2>
                     </div>
                     <div className="accrodion-grp faq-accrodion">

@@ -202,7 +202,7 @@
 
     .header-navigation .container .right-side-box {
         top: 20px;
-        right: 15px;
+        left: 15px;
         transform: translateY(0%)
     }
 
@@ -285,7 +285,7 @@
         float: left;
         margin: 28px 0;
         color: $thm-black;
-        margin-left: 30px;
+        margin-right: 30px;
         position: relative;
     }
 
@@ -319,6 +319,7 @@
     }
 
     .site-header__header-two .header-navigation ul.navigation-box>li>a {
+        text-align: center;
         color: #fff;
     }
 }
@@ -353,7 +354,7 @@
         left: -20%;
     }
     .cta-two__moc {
-        right: -70px;
+        left: -70px;
     }
 
     .banner-two__moc {
@@ -507,7 +508,6 @@
 
 
 
-    .block-title__title,
     .banner-one__text,
     .banner-two__text {
         br {
@@ -518,6 +518,7 @@
     .block-title__title {
         font-size: 40px;
         line-height: 1.1em;
+        text-align: center;
     }
 
 
@@ -561,9 +562,9 @@
     .banner-two__title,
     .banner-one__title {
         font-size: 50px;
-        br {
-            display: none;
-        }
+        // br {
+        //     display: none;
+        // }
     }
 }
 

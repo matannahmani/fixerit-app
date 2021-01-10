@@ -25,6 +25,7 @@
     }
 
     &__text {
+        text-align: right;
         margin: 0;
         font-size: 20px;
         line-height: 36px;
@@ -181,10 +182,11 @@
     }
 
     &__text {
+        text-align: right;
         margin: 0;
         font-size: 20px;
         line-height: 36px;
-        color: rgba(#fff, .7);
+        color: rgba(#fff, .95);
         margin-top: 25px;
         margin-bottom: 40px;
     }

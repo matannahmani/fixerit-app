@@ -21,7 +21,7 @@ const Testimonial = () => {
         <section className="testimonials-one">
             <div className="container">
                 <div className="block-title text-center">
-                    <h2 className="block-title__title">What Our <span>Clients</span> Say <br /> About Us.
+                    <h2 className="block-title__title">מה הלקוחות שלנו מספרים אלינו.
                     </h2>
                 </div>
                 <div className="testimonials-one__carousel-outer">

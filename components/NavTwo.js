@@ -1,8 +1,10 @@
-import {useEffect,useState} from 'react';
+import {useEffect,useState,useRef} from 'react';
 import Link from "next/link";
 
 const NavTwo = () => {
     const [sticky,setSticky] = useState(false);
+    const toggler = useRef();
+    const menu = useRef();
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         mobileMenu();
@@ -24,11 +26,9 @@ const NavTwo = () => {
 
     const mobileMenu = () => {
         //Mobile Menu Toggle
-        let mainNavToggler = document.querySelector(".menu-toggler");
-        let mainNav = document.querySelector(".main-navigation");
+        toggler.current.addEventListener('click', () => {
+            menu.current.style.display = ( (menu.current.style.display != "block" ? "block" : "none" ) );
 
-        mainNavToggler.addEventListener("click", function () {
-            mainNav.style.display = ( (mainNav.style.display != "block" ? "block" : "none" ) );
         });
     }
         return (
@@ -37,14 +37,14 @@ const NavTwo = () => {
                     <div className="container clearfix">
                         <div className="logo-box clearfix">
                             <a className="navbar-brand" href="/">
-                                <img src="/assets/images/resources/logo-light.png" className="main-logo" width="119"
+                                <img src="/assets/images/resources/logo.png" className="main-logo" width="119"
                                      alt="Awesome Image" />
                             </a>
-                            <button className="menu-toggler" data-target=".main-navigation">
+                            <button className="menu-toggler" ref={toggler} data-target=".main-navigation">
                                 <span className="fa fa-bars"></span>
                             </button>
                         </div>
-                        <div className="main-navigation">
+                        <div ref={menu} className="main-navigation">
                             <ul className=" one-page-scroll-menu navigation-box">
                                 <li className="scrollToLink">
                                     <Link href="/blog"><a>בלוג</a></Link>

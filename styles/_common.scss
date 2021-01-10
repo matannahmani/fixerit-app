@@ -37,13 +37,18 @@ a:visited {
         max-width: 1200px;
     }
 }
+@media(max-width: 1200px){
+    .opacity-tablet{
+        opacity: 0.5;
+    }
+}
 
 
 .block-title {
     margin-bottom: 45px;
-
     &__title {
         margin: 0;
+        text-align: right;
         margin-top: -10px;
         font-size: 50px;
         font-weight: 400;
@@ -54,7 +59,9 @@ a:visited {
         }
     }
 }
-
+.cta-two__text{
+    text-align: right;
+}
 
 .thm-btn {
     border: none;

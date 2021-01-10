@@ -40,7 +40,7 @@
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            right: 15px;
+            // left: 15px;
         }
     }
 
@@ -80,14 +80,12 @@
             font-weight: 400;
             color: #74727a;
             position: relative;
-
         }
 
         &.current>a,
         &:hover>a {
         	color: #2a2833;
             text-shadow: 1px 0 0 rgba($color: #2a2833, $alpha: .8);
-
         }
 
         /* Second Level Menu */
