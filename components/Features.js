@@ -13,9 +13,9 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-laptop"></i>
-                                    <h3><a href="#">שירותי מחשוב - IT</a></h3>
+                                    <h3><a>שירותי מחשוב - IT</a></h3>
                                     <p>צוות תמיכה ומערך טכנאים שיספק שירות אישי איכותי ובזמן אמת בבית העסק.</p>
-                                    <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
+                                    <a className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -23,29 +23,29 @@ const Features = () => {
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-presentation"></i>
-                                    <h3><a href="#">אינטרנט ומדיה</a></h3>
+                                    <h3><a>אינטרנט ומדיה</a></h3>
                                     <p>בניית אתרים, קידום אתרים באמצעות ערן פיקסר פתרונות אינטרנט.</p>
-                                    <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
+                                    <a className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1500ms">
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
-                                    <i className="service-one__icon dimon-icon-target"></i>
-                                    <h3><a href="#">שרתי ענן</a></h3>
+                                    <i className="service-one__icon dimon-icon-data1"></i>
+                                    <h3><a>שרתי ענן</a></h3>
                                     <p>הקמה והתקנה של שרתי ענן, הקמת מערך גיבוי יומי וניהול Database.</p>
-                                    <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
+                                    <a className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="1500ms">
                             <div className="service-one__single text-center">
                                 <div className="service-one__inner">
-                                    <i className="service-one__icon dimon-icon-visualization"></i>
-                                    <h3><a href="#">חומרה ותוכנה</a></h3>
+                                    <i className="service-one__icon dimon-icon-strategy"></i>
+                                    <h3><a>חומרה ותוכנה</a></h3>
                                     <p>ייעוץ והתקנה של מערכות תוכנה חומרה ותקשורת בבית העסק.</p>
-                                    <a href="#" className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
+                                    <a className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>
                         </div>

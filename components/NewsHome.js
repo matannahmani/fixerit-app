@@ -6,11 +6,11 @@ const NewsHome = (props) => {
         const pages = props.allPosts.slice(0,3);
         return pages.map ((e,index) => {
             return(
-                    <div className="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-duration="1500ms">
+                    <div className="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" key={e.slug+index}data-wow-duration="1500ms">
                     <div className="blog-one__single">
                         <div className="blog-one__image">
                             <img src={e.coverImage} style={{width: '100%',height: '282px',objectFit: 'cover',objectPosition: 'center'}} alt="" />
-                            <Link href={'blog/'+e.slug}>
+                            <Link href={'/blog/'+e.slug}>
                                 <a className="blog-one__more-link"><i
                                     className="fa fa-link"></i>
                                 </a>

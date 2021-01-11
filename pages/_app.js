@@ -10,8 +10,9 @@ Router.onRouteChangeStart = () => {
   NProgress.start();
 };
 
-Router.onRouteChangeComplete = () => {
+Router.onRouteChangeComplete = (url) => {
   NProgress.done();
+  console.log(url);
 };
 
 Router.onRouteChangeError = () => {

@@ -4,7 +4,24 @@ import Swiper from 'react-id-swiper';
 const Testimonial = () => {
 
     const [swiper, setSwiper] = useState(null);
-
+    const person = [
+        {
+            name: 'רוי טליאס',
+            feedback: 'אני עובד עם ערן כבר תקופה, בחור עם נתינה גדולה, יחס אדיב ושירות מדהים!'
+        },
+        {
+            name: 'רותם פינכס',
+            feedback: 'ערן הוא אחד האנשים המקצועיים שהכרתי בתחום. יודע את העבודה ולתת שירות אישי לכל לקוח ולקוח. ממליצה בחום!'
+        },
+        {
+            name: 'שמעון כוהן',
+            feedback: 'השירות של ערן והצוות מקצועי ואדיב! הקימו ובנו את האתר של העסק שלי מ-א׳ ועד ת׳, ממליץ מאוד.'
+        },
+        {
+            name: 'משה בר',
+            feedback: 'הפיקסר מקצועי, נותן תוצאה איכותית ועם יחסי אנוש מצוינים.'
+        }
+]
     const goNext = () => {
         if (swiper !== null) {
           swiper.slideNext();
@@ -27,42 +44,20 @@ const Testimonial = () => {
                 <div className="testimonials-one__carousel-outer">
                     <div className="testimonials-one__carousel">
                         <Swiper getSwiper={setSwiper}>
-                            <div className="item">
-                                <div className="testimonials-one__single">
-                                    <div className="testimonials-one__inner">
-                                        <p>This is due to their excellent service, competitive pricing and <br/> customer
-                                            support. It’s throughly refresing to get such a personal <br/> touch. Duis
-                                                aute irure dolor in reprehenderit.</p>
-                                        <h3>Shirley Smith</h3>
-                                        <span>Our Customers</span>
-                                        <img src="/assets/images/resources/testi-1-1.png" alt="Awesome Image" />
+                            {person.map((i => {
+                                return (
+                                    <div className="item">
+                                    <div className="testimonials-one__single">
+                                        <div className="testimonials-one__inner">
+                                            <p>"{i.feedback}"</p>
+                                            <h3>{i.name}</h3>
+                                            <span>לקוח שלנו</span>
+                                            <img src="/assets/images/resources/person-g.png" className="testiomonial-person" alt="Awesome Image" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="item">
-                                <div className="testimonials-one__single">
-                                    <div className="testimonials-one__inner">
-                                        <p>This is due to their excellent service, competitive pricing and <br/> customer
-                                            support. It’s throughly refresing to get such a personal <br/> touch. Duis
-                                                aute irure dolor in reprehenderit.</p>
-                                        <h3>Shirley Smith</h3>
-                                        <span>Our Customers</span>
-                                        <img src="/assets/images/resources/testi-1-1.png" alt="Awesome Image" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="testimonials-one__single">
-                                    <div className="testimonials-one__inner">
-                                        <p>This is due to their excellent service, competitive pricing and <br/> customer
-                                            support. It’s throughly refresing to get such a personal <br/> touch. Duis
-                                                aute irure dolor in reprehenderit.</p>
-                                        <h3>Shirley Smith</h3>
-                                        <span>Our Customers</span>
-                                        <img src="/assets/images/resources/testi-1-1.png" alt="Awesome Image" />
-                                    </div>
-                                </div>
-                            </div>
+                                )
+                            }))}
                         </Swiper>
                     </div>
                     <div className="testimonials-one__carousel__shape-one"></div>

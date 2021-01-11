@@ -123,12 +123,12 @@ const NewsDetails = (props) => {
                         </div>
                         <div className="col-lg-4">
                             <div className="sidebar">
-                                <div className="sidebar__single sidebar__search">
+                                {/* <div className="sidebar__single sidebar__search">
                                     <form action="#" className="sidebar__search-form">
                                         <input type="text" name="search" placeholder="חפש באתר..." />
                                             <button type="submit"><i className="fa fa-search"></i></button>
                                     </form>
-                                </div>
+                                </div> */}
                                 <div className="sidebar__single sidebar__post">
                                     <h3 className="sidebar__title">כתבות אחרונות</h3>
                                     <div className="sidebar__post-wrap">
@@ -148,9 +148,9 @@ const NewsDetails = (props) => {
                                 <div className="sidebar__single sidebar__category">
                                     <h3 className="sidebar__title">קטגוריות</h3>
                                     <ul className="sidebar__category-list">
-                                        <li className="sidebar__category-list-item"><a href="#">תיקון מחשבים</a></li>
-                                        <li className="sidebar__category-list-item"><a href="#">תוכנות</a></li>
-                                        <li className="sidebar__category-list-item"><a href="#">טכנלוגיה</a></li>
+                                        <li className="sidebar__category-list-item"><Link href="/blog"><a>תיקון מחשבים</a></Link></li>
+                                        <li className="sidebar__category-list-item"><Link href="/blog"><a>תוכנות</a></Link></li>
+                                        <li className="sidebar__category-list-item"><Link href="/blog"><a>טכנלוגיה</a></Link></li>
                                     </ul>
                                 </div>
                                 <div className="sidebar__single sidebar__tags">
@@ -158,9 +158,9 @@ const NewsDetails = (props) => {
                                     <ul className="sidebar__tags-list">
                                     {props.tags.map ((e,i) => (i !== props.tags.length - 1 )
                                     ?
-                                    <li className="sidebar__tags-list-item"><a href="#">{e},</a></li>
+                                    <li className="sidebar__tags-list-item"><span> {e} , </span></li>
                                     : 
-                                    <li className="sidebar__tags-list-item"><a href="#">{e},</a></li>
+                                    <li className="sidebar__tags-list-item"><span>{e}</span></li>
                                     )}
                                     </ul>
                                 </div>

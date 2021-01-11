@@ -1,11 +1,14 @@
 import {useEffect,useState,useRef} from 'react';
 import Link from "next/link";
+import Router from 'next/router';
 
 const NavTwo = () => {
     const [sticky,setSticky] = useState(false);
     const toggler = useRef();
     const menu = useRef();
+    const [active,setActive] = useState('');
     useEffect(() => {
+        setActive(location.pathname);
         window.addEventListener('scroll', handleScroll);
         mobileMenu();
         return () => {
@@ -13,6 +16,9 @@ const NavTwo = () => {
         }
     },[])
 
+    Router.onRouteChangeComplete = (url) => {
+        setActive(url);
+    };
 
     const handleScroll = () => {
 
@@ -45,16 +51,21 @@ const NavTwo = () => {
                             </button>
                         </div>
                         <div ref={menu} className="main-navigation">
-                            <ul className=" one-page-scroll-menu navigation-box">
-                                <li className="scrollToLink">
+                            <ul className="one-page-scroll-menu navigation-box">
+                                <li className={active === '/blog' ? 'scrollToLink current' : 'scrollToLink'}>
                                     <Link href="/blog"><a>בלוג</a></Link>
                                 </li>
-
+                                {active === '/' ?
+                                <>
                                 <li className="scrollToLink">
-                                    <a href="../#features">שירותים</a>
+                                    <a href="#features">שירותים</a>
                                 </li>
-                                <li className="current scrollToLink">
-                                    <a href="/">בית</a>
+                                </>
+                                :
+                                null    
+                                }
+                                <li  className={active === '/' ? 'scrollToLink current' : 'scrollToLink'}>
+                                    <Link href="/"><a>בית</a></Link>
                                 </li>
                             </ul>
                         </div>
