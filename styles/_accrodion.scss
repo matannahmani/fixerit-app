@@ -78,6 +78,7 @@
             border-radius: 7px;
             position: relative;
             transition: all .4s ease;
+            text-align: right;
 
         }
 
@@ -87,7 +88,6 @@
             cursor: pointer;
             position: relative;
             transition: all .4s ease;
-
 
 
             @media(max-width: 375px) {
@@ -105,7 +105,7 @@
                 align-items: center;
                 position: absolute;
                 top: 50%;
-                right: 40px;
+                left: 40px;
                 transform: translateY(-50%);
             }
 

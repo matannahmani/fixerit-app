@@ -1,8 +1,20 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 const Faq = () => {
     const faqt = useRef([]);
-
+    const faqs = [
+    {
+        q: 'יש לי עסק קטן זה מתאים לי ?',
+        a: 'השירות מתאים לעסקים גדולים וקטנים כאחד אפילו למשרדים עצמאיים וכאלו שעובדים מהבית השירות יספק לכם שקט נפשי לגבי המידע שלכם, המערכות שלכם ועוד כמו כן לקבוצה שירותים משלימים כמו בניית דפי נחיתה, קידום אתרים, הטמעת מערכות סליקה בעסק ועוד'
+    },    
+    {
+        q: 'מהם היתרונות העיקריים של שירותי מחשוב במיקור חוץ לעסקים ?',
+        a: "שקט נפשי - כל מערך המחשוב בעסק עובד ללא הפרעות - עבודה מול גורם אחד. גמישות מחשבתית - כצוות אנו פותרים תקלות ביחד בצורה אפקטיבית ויעילה . יציבות מערכות האינטרנט והתקשורת בעסק חיסכון במקום אין צורך בחדר שרתים וכו' - הכל עובר לענן"
+    },
+    {
+        q: 'פתרונות גיבוי ושירותי ענן​ האם זה בטוח ?',
+        a: 'אנו משתמשים בחברת גוגל העולמית לגיבוי הענן לכן אבטחת העננים היא של חברת גוגל, כמו כן אנו ממליצים לעשות גיבוי מקומי היתרון בענן מנוהל של חברת גוגל הוא מהירות הגישה,  העברת קבצים מהירה מאוד דרך API ועוד'
+    }]
     const handleClick = (i) => {
         const node = faqt.current[i];
         if (node.classList.contains('active'))
@@ -24,66 +36,22 @@ const Faq = () => {
                         </h2>
                     </div>
                     <div className="accrodion-grp faq-accrodion">
-                        <div className="accrodion" ref={(e) => faqt.current[0] = e}>
-                            <div className="accrodion-inner">
-                                <div className="accrodion-title" onClick={() => handleClick(0)}>
-                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
-                                </div>
-                                <div className="accrodion-content faq-hide">
-                                    <div className="inner">
-                                        <p>There are many variations of passages of available but majority have
-                                            alteration in some by inject humour or random words. Lorem ipsum dolor sit
-                                            amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque
-                                            aliquam.</p>
+                        {faqs.map((i,index) => {
+                            return (
+                                <div className="accrodion" ref={(e) => faqt.current[index] = e}>
+                                <div className="accrodion-inner">
+                                    <div className="accrodion-title" onClick={() => handleClick(index)}>
+                                        <h4>{i.q}</h4>
+                                    </div>
+                                    <div className="accrodion-content faq-hide">
+                                        <div className="inner">
+                                            <p>{i.a}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="accrodion" ref={(e) => faqt.current[1] = e}>
-                            <div className="accrodion-inner">
-                                <div className="accrodion-title" onClick={() => handleClick(1)}>
-                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
-                                </div>
-                                <div className="accrodion-content faq-hide">
-                                    <div className="inner">
-                                        <p>There are many variations of passages of available but majority have
-                                            alteration in some by inject humour or random words. Lorem ipsum dolor sit
-                                            amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque
-                                            aliquam.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accrodion" ref={(e) => faqt.current[2] = e}>
-                            <div className="accrodion-inner">
-                                <div className="accrodion-title" onClick={() => handleClick(2)}>
-                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
-                                </div>
-                                <div className="accrodion-content faq-hide">
-                                    <div className="inner">
-                                        <p>There are many variations of passages of available but majority have
-                                            alteration in some by inject humour or random words. Lorem ipsum dolor sit
-                                            amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque
-                                            aliquam.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="accrodion" ref={(e) => faqt.current[3] = e}>
-                            <div className="accrodion-inner">
-                                <div className="accrodion-title" onClick={() => handleClick(3)}>
-                                    <h4>Pre and post launch mobile app marketing pitfalls to avoid</h4>
-                                </div>
-                                <div className="accrodion-content faq-hide">
-                                    <div className="inner">
-                                        <p>There are many variations of passages of available but majority have
-                                            alteration in some by inject humour or random words. Lorem ipsum dolor sit
-                                            amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque
-                                            aliquam.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            )
+                        })}
                     </div>
                 </div>
             </section>
