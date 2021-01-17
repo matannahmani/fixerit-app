@@ -38,7 +38,7 @@ const Faq = () => {
                     <div className="accrodion-grp faq-accrodion">
                         {faqs.map((i,index) => {
                             return (
-                                <div className="accrodion" ref={(e) => faqt.current[index] = e}>
+                                <div className="accrodion" key={index+i.q} ref={(e) => faqt.current[index] = e}>
                                 <div className="accrodion-inner">
                                     <div className="accrodion-title" onClick={() => handleClick(index)}>
                                         <h4>{i.q}</h4>

@@ -2,7 +2,6 @@
 
 .blog-one {
     padding: 120px 0;
-
     &__single {
         position: relative;
         margin-bottom: 30px;
@@ -51,6 +50,8 @@
         padding: 0 50px;
         padding-top: 45px;
         padding-bottom: 40px;
+        position: relative;
+        height: 240px;
     }
 
     &__meta {
@@ -117,6 +118,9 @@
         text-transform: uppercase;
         letter-spacing: .2em;
         transition: all .4s ease;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
 
         &:hover {
             color: $thm-black;
@@ -156,6 +160,7 @@
     }
 
     .blog-one__content {
+        height: 100%;
         padding-left: 50px;
         padding-right: 50px;
         border-radius: 0;

@@ -22,7 +22,6 @@ const NewsDetails = (props) => {
                                     </ul>
                                     <h3 className="blog-one__title">{props.title}</h3>
                                     <div className="blog-one__text">
-                                        {console.log(props.content)}
                                         <BlockContent blocks={props.content} className={markdownStyles.markdown} />
                                     </div>
 
@@ -134,9 +133,9 @@ const NewsDetails = (props) => {
                                     <div className="sidebar__post-wrap">
                                         {props.morePosts.map ((e => {
                                             return(
-                                        <div className="sidebar__post__single">
+                                        <div key={e.slug} className="sidebar__post__single">
                                             <div className="sidebar__post-image">
-                                                <div className="inner-block"><img src={e.coverImage} style={{height: "62px",objectFit: "cover",objectPosition: "center"}} alt="Article Picture" /></div>
+                                                <div className="inner-block"><img src={e.author.picture} style={{height: "62px",objectFit: "cover",objectPosition: "center"}} alt="Article Author Picture" /></div>
                                             </div>
                                             <div className="sidebar__post-content">
                                                 <h4 className="sidebar__post-title"><a href={`./${e.slug}`}>{e.excerpt}</a></h4>
@@ -158,9 +157,9 @@ const NewsDetails = (props) => {
                                     <ul className="sidebar__tags-list">
                                     {props.tags.map ((e,i) => (i !== props.tags.length - 1 )
                                     ?
-                                    <li className="sidebar__tags-list-item"><span> {e} , </span></li>
+                                    <li key={e+i} className="sidebar__tags-list-item"><span> {e} , </span></li>
                                     : 
-                                    <li className="sidebar__tags-list-item"><span>{e}</span></li>
+                                    <li key={e+i} className="sidebar__tags-list-item"><span>{e}</span></li>
                                     )}
                                     </ul>
                                 </div>

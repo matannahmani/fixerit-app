@@ -69,9 +69,9 @@ const NavTwo = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="right-side-box">
+                        {/* <div className="right-side-box">
                             <a className="thm-btn header__cta-btn" href="#"><span>התחבר</span></a>
-                        </div>
+                        </div> */}
                     </div>
                 </nav>
             </header>

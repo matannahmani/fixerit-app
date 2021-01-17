@@ -6,18 +6,9 @@ import 'nprogress/nprogress.css'; //styles of nprogress
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: true });
 
-Router.onRouteChangeStart = () => {
-  NProgress.start();
-};
-
-Router.onRouteChangeComplete = (url) => {
-  NProgress.done();
-  console.log(url);
-};
-
-Router.onRouteChangeError = () => {
-  NProgress.done();
-};
+  Router.events.on('routeChangeStart', () => NProgress.start());
+  Router.events.on('routeChangeComplete', () => NProgress.done());
+  Router.events.on('routeChangeError', () => NProgress.done());
   return (
   <Component {...pageProps} />
   )

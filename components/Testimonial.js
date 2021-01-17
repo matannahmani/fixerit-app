@@ -46,7 +46,7 @@ const Testimonial = () => {
                         <Swiper getSwiper={setSwiper}>
                             {person.map((i => {
                                 return (
-                                    <div className="item">
+                                    <div key={i.name} className="item">
                                     <div className="testimonials-one__single">
                                         <div className="testimonials-one__inner">
                                             <p>"{i.feedback}"</p>
