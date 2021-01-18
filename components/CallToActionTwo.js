@@ -16,7 +16,7 @@ const CallToActionTwo = () => {
                                     <p>חברתנו תעזור לעסק שלכם לעבור לעבודה מהבית, בעידן המודרני ובמיוחד לאחר מגפת הקורנה עברנו לעבוד מהבית רובנו, התאמת התשתיות של המנהלים והעובדים היא קריטית להצלחת הארגון וייעול העבודה מהבית.</p>
                                     <p><b>צוות מערכות מחשוב זמין 24/7</b><br/> למענה מהיר ופתרון בעיות מרוחק כולל הגעה לבית העסק בכל שעה <span className="cta-read">כפוף לדמי ניהול חודשיים.</span></p>
                                 </div>
-                                <a href="#" className="thm-btn"><span>צור קשר</span></a>
+                                <button onClick={() => document.querySelector('#contactus').scrollIntoView({behavior: 'smooth'})} className="thm-btn"><span>צור קשר</span></button>
                             </div>
                         </div>
                     </div>

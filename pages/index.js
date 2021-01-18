@@ -16,7 +16,7 @@ import { getAllPostsForHome } from "../lib/api";
 
 const HomePageTwo = ({ allPosts, preview }) => (
 
-    <Layout pageTitle="Fixer IT">
+    <Layout pageTitle="פתרונות מחשוב במיקור חוץ לעסקים באילת מבית פיקסר">
         <NavTwo />
         <BannerTwo />
         <Features />

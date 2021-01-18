@@ -69,7 +69,8 @@ export default class Blog extends Component {
                 <div className="site-footer__bottom">
                     <div className="container">
                         <div className="inner-container text-center">
-                            <p className="site-footer__copy">כל הזכויות שמורות ל <a target="_blank" href="https://www.matannahmani.com">MatanNahmani.com</a> &copy; </p>
+                            <p className="site-footer__copy">כל הזכויות שמורות ל <a className="link-color" target="_blank" href="https://www.matannahmani.com">MatanNahmani.com</a> &copy;</p>
+                            <p className="site-footer__copy" style={{direction: 'ltr'}}>All rights reserved to <a className="link-color" target="_blank" href="https://www.matannahmani.com">MatanNahmani.com</a> &copy;</p>
                         </div>
                     </div>
                 </div>

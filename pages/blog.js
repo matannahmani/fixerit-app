@@ -9,7 +9,7 @@ import { getAllPostsForHome } from '../lib/api'
 
 const NewsPage = ({ allPosts, preview }) => {
     return(
-    <Layout pageTitle="FixerIT | News">
+    <Layout pageTitle="FixerIT | Blog">
         <NavTwo />
         <PageHeader title="בלוג" />
         <News allPosts={allPosts}/>

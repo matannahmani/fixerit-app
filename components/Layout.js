@@ -22,6 +22,7 @@ const Layout = (props) => {
                     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
                     <link rel="stylesheet" href="/assets/css/swiper.min.css"/>
                     <link rel="stylesheet" href="/assets/plugins/dimon-icons/style.css" />
+                    <meta name="description" content="מחברים את העסק שלכם לטכנולוגיות מתקדמות, פיקסר מספקת פתרונות מחשוב ו it לבעלי עסקים בעיר אילת שירותי תוכנה וחומרה, שירותי ענן וקידום באינטרנט"/>
                 </Head>
 
                 <div className="page-wrapper">

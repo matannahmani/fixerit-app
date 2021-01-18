@@ -24,7 +24,7 @@ const Features = () => {
                                 <div className="service-one__inner">
                                     <i className="service-one__icon dimon-icon-presentation"></i>
                                     <h3><a>אינטרנט ומדיה</a></h3>
-                                    <p>בניית אתרים, קידום אתרים באמצעות ערן פיקסר פתרונות אינטרנט.</p>
+                                    <p><a className="link-color" target="_blank" href="https://eranfixer.com/webdev">בניית אתרים</a>, <a className="link-color" target="_blank" href="https://eranfixer.com/webremarketing">קידום אתרים</a> באמצעות ערן פיקסר פתרונות אינטרנט.</p>
                                     <a className="service-one__link"><i className="dimon-icon-right-arrow"></i></a>
                                 </div>
                             </div>

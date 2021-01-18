@@ -33,6 +33,13 @@ a:visited {
 .thm-gray-bg {
     background-color: $thm-gray;
 }
+.link-color{
+    color: #ff4eb5 !important;
+    transition: all .4s ease;
+}
+.link-color:hover{
+    color:black !important;
+}
 
 @media(min-width: 1200px) {
     .container {
