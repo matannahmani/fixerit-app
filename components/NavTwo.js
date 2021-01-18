@@ -60,7 +60,7 @@ const NavTwo = () => {
                                 {active === '/' ?
                                 <>
                                 <li className="scrollToLink">
-                                    <a href="#features">שירותים</a>
+                                    <a onClick={ () => document.querySelector('#features').scrollIntoView({behavior: 'smooth'})} >שירותים</a>
                                 </li>
                                 </>
                                 :

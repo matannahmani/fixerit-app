@@ -33,7 +33,7 @@ export default class Blog extends Component {
     }
 
     scrollTop = () => {
-        window.scrollTo(0, 0);
+        window.scrollTo({behavior: 'smooth',top: 0});
     }
 
     render(){
@@ -75,8 +75,7 @@ export default class Blog extends Component {
                 </div>
             </footer>
 
-                <div onClick={this.scrollTop} className="scroll-to-target scroll-to-top" style={{display: this.state.scrollBtn ? 'block' : 'none'}}><i className="fa fa-angle-up"></i></div>
-
+            <div onClick={this.scrollTop} className="scroll-to-target scroll-to-top" style={{display: this.state.scrollBtn ? 'block' : 'none'}}><i className="fa fa-angle-up"></i></div>
             </div>
         )
     }

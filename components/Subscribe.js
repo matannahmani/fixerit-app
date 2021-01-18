@@ -86,7 +86,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 const Subscribe = () => {
         return (
-            <section className="mailchimp-one">                
+            <section className="mailchimp-one" id="contactus">                
                 <div className="container">
                     <div className="block-title text-center">
                         <h2 className="block-title__title">צרו קשר</h2>

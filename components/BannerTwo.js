@@ -18,7 +18,7 @@ const BannerTwo = () => {
                                     <span>פתרונות <br/>מחשוב מנוהלים</span></h3>
                                 <p className="banner-two__text"> מחברים את העסק שלכם לטכנולוגיות מתקדמות, פיקסר מספקת פתרונות מחשוב ו it לבעלי עסקים בעיר אילת 
                                 </p>
-                                <a href="#" className="banner-two__btn thm-btn "><span>צור קשר</span></a>
+                                <button onClick={() => document.querySelector('#contactus').scrollIntoView({behavior: 'smooth'})} className="banner-two__btn thm-btn "><span>צור קשר</span></button>
                             </div>
                         </div>
                     </div>
