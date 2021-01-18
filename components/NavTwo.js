@@ -42,10 +42,12 @@ const NavTwo = () => {
                 <nav className={`navbar navbar-expand-lg navbar-light header-navigation stricky ${sticky ? 'stricked-menu stricky-fixed' : ''}`}>
                     <div className="container clearfix">
                         <div className="logo-box clearfix">
-                            <a className="navbar-brand" href="/">
+                            <Link href="/">
+                            <a className="navbar-brand">
                                 <img src="/assets/images/resources/logo.png" className="main-logo" width="119"
                                      alt="Awesome Image" />
                             </a>
+                            </Link>
                             <button className="menu-toggler" ref={toggler} data-target=".main-navigation">
                                 <span className="fa fa-bars"></span>
                             </button>
@@ -69,9 +71,6 @@ const NavTwo = () => {
                                 </li>
                             </ul>
                         </div>
-                        {/* <div className="right-side-box">
-                            <a className="thm-btn header__cta-btn" href="#"><span>התחבר</span></a>
-                        </div> */}
                     </div>
                 </nav>
             </header>
