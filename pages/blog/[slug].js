@@ -61,9 +61,8 @@ export async function getStaticProps({ params, preview = false }) {
       preview,
       post: data?.post || null,
       morePosts: data?.morePosts || null,
-      revalidate: 1, // In seconds
-
     },
+    revalidate: 10,
   }
 }
 
@@ -76,7 +75,6 @@ export async function getStaticPaths() {
           slug: post.slug,
         },
       })) || [],
-    fallback: false, // will always stay up to date and not check for cached posts
-
+    fallback: true,
   }
 }
