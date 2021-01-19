@@ -76,7 +76,7 @@ export async function getStaticPaths() {
           slug: post.slug,
         },
       })) || [],
-    fallback: true,
+    fallback: false, // will always stay up to date and not check for cached posts
 
   }
 }
